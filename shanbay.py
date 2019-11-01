@@ -47,6 +47,9 @@ for x in range(5):
             cuoti.append(word)
             print('回答错误')
     print('下一题（0--认识，1--不认识）','\n','--------------')
+buhui = filter(lambda x:'1'==x[1], shengci.items())
+for(key,value) in buhui:
+    print(key)
 print('回答错误的单词有：')
-print('、'.join(cuoti))
+print('、'.join(cuoti))#将列表转换为字符串
     
